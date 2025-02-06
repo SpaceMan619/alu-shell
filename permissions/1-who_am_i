@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n $(whoami)
+echo -n "$(whoami) "
