@@ -1,2 +1,2 @@
 #!/bin/bash
-eval $'chown betty hello\nstat -c "%U" hello'
+chown betty hello
