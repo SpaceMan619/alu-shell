@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
-hour=0
-while [ $hour -le 12 ]; do
-  echo "Hour: $hour"
-  minute=1
-  while [ $minute -le 59 ]; do
-    echo $minute
-    ((minute++))
-  done
-  ((hour++))
+# This script lists the current directory’s non-hidden files in a list format, displaying only the part after the first dash.
+for file in *-*; do
+  echo "${file#*-}"
 done
