@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-# liists files in the current directory and displays only the part after the first dash
-
-for file in *-*; do
-  echo "${file#*-}"
+hour=0
+while [ $hour -le 12 ]; do
+  echo "Hour: $hour"
+  minute=1
+  while [ $minute -le 59 ]; do
+    echo $minute
+    ((minute++))
+  done
+  ((hour++))
 done
