@@ -1,0 +1,5 @@
+#!/bin/bash
+# Loop through each line in /etc/passwd using ":" as the field separator.
+while IFS=: read -r username password uid gid gecos home shell; do
+    echo "${username}:${uid}:${home}"
+done < /etc/passwd
