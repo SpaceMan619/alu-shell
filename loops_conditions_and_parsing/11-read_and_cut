@@ -1,5 +1,5 @@
-#!/bin/bash
-# Loop through each line in /etc/passwd using ":" as the field separator.
-while IFS=: read -r username password uid gid gecos home shell; do
-    echo "${username}:${uid}:${home}"
+#!/usr/bin/env bash
+# This script displays username, user id, and home directory from /etc/passwd
+while IFS=":" read -r username _ userid _ _ homedir _; do
+  echo "$username:$userid:$homedir"
 done < /etc/passwd
