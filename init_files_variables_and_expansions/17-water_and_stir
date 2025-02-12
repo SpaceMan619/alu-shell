@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( $(echo $WATER | tr 'a-z' '0-9') + $(echo $STIR | tr 'a-z' '0-9') )) | awk '{print toupper($0)}'
+echo $(($(echo $WATER | tr 'a-z' '0-9') + $(echo $STIR | tr 'a-z' '0-9'))) | tr '0-9' 'a-z'
