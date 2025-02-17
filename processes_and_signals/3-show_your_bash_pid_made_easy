@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This is a script that displays the PID, along with the process name, of processes whose name contains the word bash, excluding itself.
+# This is a script that displays the PID, along with the process name, of processes whose name contain the word bash
 
-pgrep -l "bash" | grep -v "$(basename $0)"
+pgrep -l "bash"
